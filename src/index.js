@@ -10,7 +10,6 @@ const METHOD = 1;
 const URL = 2;
 const DATA = 3;
 
-var startTime = Date.now();
 var currentTimeStamp = null;
 var wait = 0;
 
