@@ -1,0 +1,19 @@
+{
+  "name": "logreplay",
+  "version": "1.0.0",
+  "description": "Replay log request",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "console-sync": "0.0.1",
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0",
+    "request": "^2.83.0",
+    "util": "^0.10.3"
+  }
+}
