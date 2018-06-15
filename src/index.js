@@ -25,9 +25,9 @@ rd.on('line', function (line) {
 
 var sendRequest = function (requestData) {
     if (currentTimeStamp != null) {
-        wait = requestData[TIMESTAMP] - currentTimeStamp;
+        wait = new Date(requestData.startedDateTime) - currentTimeStamp;
     }
-    currentTimeStamp = requestData[TIMESTAMP];
+    currentTimeStamp = new Date(requestData.startedDateTime);
 
     doSleep(wait);
 

@@ -1,5 +1,5 @@
 var clc = require('cli-color');
-var harReplay = require('har-replay');
+var jsonReplay = require('lib/reader.js');
 
 var startRequest;
 var during;
@@ -10,7 +10,7 @@ if(args.length == 1) {
     filepath = args[0];
 }
 
-harReplay.load(filepath, {
+jsonReplay.load(filepath, {
     beforeRequest: function(request) {
         request.headers['Some-New-Header'] = 'abc';
         startRequest = new Date().getTime();

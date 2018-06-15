@@ -1,0 +1,15 @@
+{
+    "requests": [
+          {
+          'repeat(5, 100)': {
+            "startedDateTime": "2018-02-01T16:{{integer(0, 59, '00')}}:00.000+01:00",
+            "method": "GET",
+            "url": "http://rawdata.docker/app_dev.php/rest/import/offers",
+            "headers": [],
+            "queryString" : [],
+            "postData" : {}
+          }
+
+    }
+    ]
+}
